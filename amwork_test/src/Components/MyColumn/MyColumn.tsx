@@ -7,10 +7,8 @@ interface Props {
 }
 export function MyColumn (allCards: Props){
     return (
-        <>
-        {/*<MyCard items={[{title:"object_name",  completed: false, id: 100,userId: 100 }]}/>*/}
-
+        <div>
             {allCards.items.map((e) => {return <MyCard title={e.title} id={e.id} userId={e.userId} completed={e.completed} />})}
-        </>
+        </div>
     )
 }

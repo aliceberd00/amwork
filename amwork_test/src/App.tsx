@@ -5,6 +5,7 @@ import {ItsCard} from "./Card/ItsCard";
 import {getAllData} from "./Requests/getAllCards";
 import {IOneCardData} from "./Types/dataTypes";
 import {MyColumn} from "./Components/MyColumn/MyColumn";
+import Header from "./Components/Header/Header";
 
 const App = () => {
     const [allData, setAllData] = useState<IOneCardData[]>([]);
@@ -22,9 +23,8 @@ const App = () => {
 
     return (
     <div className="App">
-        <>
+      <Header/>
       <MyColumn items={allData} />
-        </>
     </div>
   );
 }

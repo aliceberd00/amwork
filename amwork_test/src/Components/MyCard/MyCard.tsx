@@ -35,9 +35,9 @@ import {getAllData} from "../../Requests/getAllCards";
 const MyCard = (props: IOneCardData) => {
     console.log(props);
     return (
-        <>
+        <div className={mycard.mycard} >
            <h1>{props.title}</h1>
-        </>
+        </div>
     )
 };
 export default MyCard;
