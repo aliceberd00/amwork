@@ -4,8 +4,9 @@ import './App.css';
 import {ItsCard} from "./Card/ItsCard";
 import {getAllData} from "./Requests/getAllCards";
 import {IOneCardData} from "./Types/dataTypes";
+import {MyColumn} from "./Components/MyColumn/MyColumn";
 
-function App() {
+const App = () => {
     const [allData, setAllData] = useState<IOneCardData[]>([]);
     console.log("allData")
     console.log(allData)
@@ -21,7 +22,9 @@ function App() {
 
     return (
     <div className="App">
-      <ItsCard/>
+        <>
+      <MyColumn items={allData} />
+        </>
     </div>
   );
 }

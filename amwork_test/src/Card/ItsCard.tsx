@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import axios from "axios";
-import itscard from './ItsCard.module.css'
+
 
 const bull = (
     <Box
@@ -55,7 +55,7 @@ export function ItsCard() {
 
     return (
         <Box sx={{ minWidth: 275 }}>
-            <Card className={itscard.itscard} variant="outlined">{card}
+            <Card  variant="outlined">{card}
                 {title ? title.map((title)=>{
                     return <p>{title.title}</p>
                 }) :null}
