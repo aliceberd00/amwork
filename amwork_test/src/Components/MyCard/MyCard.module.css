@@ -4,7 +4,13 @@
   border-radius: 7px;
   border: 7px solid #F4F8FF;
 }
-.mycard h1 {
+
+.task {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+}
+.task h1 {
   color: #3D8FEC;
   font-weight: 600;
   font-size: 20px;

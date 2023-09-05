@@ -1,19 +1,18 @@
 import React, {useEffect, useState} from "react";
-import axios from "axios/index";
-import {Box} from "@mui/material";
-import Card from "@mui/material/Card";
-import {Title} from "../../Card/ItsCard";
-import {IOneCardData} from '../../Types/dataTypes'
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import mycard from './MyCard.module.css'
-import {getAllData} from "../../Requests/getAllCards";
+import {IOneCardData} from '../../Types/dataTypes';
+import mycard from './MyCard.module.css';
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const MyCard = (props: IOneCardData) => {
     console.log(props);
     return (
         <div className={mycard.mycard} >
-           <h1>{props.title}</h1>
+            <div className={mycard.task}>
+                <Checkbox{...label} />
+               <h1>{props.title}</h1>
+            </div>
             <div className={mycard.footer}>
                 <div className={mycard.buttons}>
                     <button className={mycard.button1}>Entity title</button>
