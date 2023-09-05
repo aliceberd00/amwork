@@ -9,34 +9,18 @@ import Typography from "@mui/material/Typography";
 import mycard from './MyCard.module.css'
 import {getAllData} from "../../Requests/getAllCards";
 
-
-// const card = (
-//     <React.Fragment>
-//         <CardContent>
-//             <Typography  sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-//                 getAllData()
-//             </Typography>
-//             <Typography variant="h5" component="div">
-//                 be nev o lent
-//             </Typography>
-//             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-//                 adjective
-//             </Typography>
-//             <Typography variant="body2">
-//                 well meaning and kindly.
-//                 <br />
-//                 {'"a benevolent smile"'}
-//             </Typography>
-//         </CardContent>
-//     </React.Fragment>
-// );
-
-
 const MyCard = (props: IOneCardData) => {
     console.log(props);
     return (
         <div className={mycard.mycard} >
            <h1>{props.title}</h1>
+            <div className={mycard.footer}>
+                <div className={mycard.buttons}>
+                    <button className={mycard.button1}>Entity title</button>
+                    <button className={mycard.button2}>Front-end</button>
+                </div>
+                <img src="/images/Img.svg" />
+            </div>
         </div>
     )
 };
