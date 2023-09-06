@@ -5,17 +5,13 @@ import Checkbox from '@mui/material/Checkbox';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-// export interface IInputWrapperProps {
-//     children?: JSX.Element|JSX.Element[];
-// }
-//
-// function startData (props:IInputWrapperProps) {
-//     Math.floor(Math.random() * 12);
-// }
-//
-// function endData (){
-//
-// }
+function createRandomTime(){
+    const month = Math.floor(Math.random() * 12) +1;
+    const day = Math.floor(Math.random() * 28) +1;
+    const hoar = Math.floor(Math.random() * 23);
+    const min = Math.floor(Math.random() * 59);
+    return day + '/' + month + ' ' + hoar + ':' + min ;
+}
 
 const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
     // console.log(props);
@@ -26,14 +22,12 @@ const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
                     <Checkbox{...label} />
                    <h1>{title}</h1>
                 </div>
-                {/*<div className={mycard.time_container}>*/}
                     <div className={mycard.time}>
-                       <h3>{id}/{id}</h3>
-                       <h3>{id}/{id}</h3>
+                       <h3>srart: {createRandomTime()}</h3>
+                       <h3>finish: {createRandomTime()}</h3>
                     </div>
-                {/*</div>*/}
                 <div>
-                    <p>Task description with long long long te</p>
+                    <p>Task description with long long long te...</p>
                 </div>
                 <div className={mycard.footer}>
                     <div className={mycard.buttons}>
