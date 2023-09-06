@@ -1,13 +1,17 @@
+.mycard_container {
+  padding: 5px;
+}
+
 .mycard {
-  width: 305px;
-  height: 208px;
+  width: 300px;
+  height: 100%;
   border-radius: 7px;
   border: 7px solid #F4F8FF;
+  justify-content: space-evenly;
 }
 
 .task {
   display: flex;
-  margin: 0 auto;
   width: 95%;
 }
 .task h1 {
@@ -16,10 +20,20 @@
   font-size: 20px;
 }
 
+.time {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.time h3 {
+  color: #50B810;
+  font-size: 14px;
+}
+
 .footer {
   display: flex;
-  margin: 0 auto;
   width: 95%;
+  margin-bottom: 15px;
 }
 .footer img {
   width: 35px;
@@ -29,7 +43,7 @@
 .buttons {
   display: flex;
   margin: 0 auto;
-  width: 72%;
+  width: 75%;
 }
 
 .button1 {

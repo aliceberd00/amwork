@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {ItsCard} from "./Card/ItsCard";
 import {getAllData} from "./Requests/getAllCards";
 import {IOneCardData} from "./Types/dataTypes";
 import {MyColumn} from "./Components/MyColumn/MyColumn";
