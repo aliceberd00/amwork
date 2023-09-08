@@ -28,7 +28,7 @@ const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
                        <h3>finish: {createRandomTime()}</h3>
                     </div>
                 <div className={mycard.description}>
-                    <p>{faker.random.word()} </p>
+                    <p>{faker.random.words(10)} </p>
                 </div>
                 <div className={mycard.footer}>
                     <div className={mycard.buttons}>

@@ -4,7 +4,6 @@ import {getAllData} from "./Requests/getAllCards";
 import {IOneCardData} from "./Types/dataTypes";
 import {MyColumn} from "./Components/MyColumn/MyColumn";
 import Header from "./Components/Header/Header";
-import MyCard from "./Components/MyCard/MyCard";
 const App = () => {
     const [allData, setAllData] = useState<IOneCardData[]>([]);
 
