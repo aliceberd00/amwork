@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {IOneCardData} from '../../Types/dataTypes';
 import mycard from './MyCard.module.css';
 import Checkbox from '@mui/material/Checkbox';
@@ -15,7 +15,6 @@ function createRandomTime(){
 }
 
 const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
-    // console.log(props);
     return (
         <div className={mycard.mycard_container}>
             <div className={mycard.mycard}>
@@ -27,8 +26,8 @@ const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
                        <h3>srart: {createRandomTime()}</h3>
                        <h3>finish: {createRandomTime()}</h3>
                     </div>
-                <div>
-                    <p>Task description with long long text</p>
+                <div className={mycard.description}>
+                    <p>Task description with long long long text</p>
                 </div>
                 <div className={mycard.footer}>
                     <div className={mycard.buttons}>

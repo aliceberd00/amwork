@@ -85,4 +85,17 @@
   font-size: 16px;
 }
 
+.description {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  font-weight: 500;
+  font-size: 14px;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 85px;
+}
+
 /*# sourceMappingURL=MyCard.module.css.map */

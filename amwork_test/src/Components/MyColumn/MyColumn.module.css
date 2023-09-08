@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.mycolum {
+  width: 350px; /* Ширина блока */
+  height: 1000px; /* Высота блока */
+  /* Включаем отображение полос прокрутки по горизонтали
+  и по вертикали */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=MyColumn.module.css.map */
