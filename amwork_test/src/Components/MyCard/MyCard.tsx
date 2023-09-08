@@ -5,12 +5,13 @@ import Checkbox from '@mui/material/Checkbox';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
+
 function createRandomTime(){
-    const month = Math.floor(Math.random() * 12) +1;
-    const day = Math.floor(Math.random() * 28) +1;
-    const hoar = Math.floor(Math.random() * 23);
-    const min = Math.floor(Math.random() * 59);
-    return day + '/' + month + ' ' + hoar + ':' + min ;
+    const month = String(Math.floor(Math.random() * 12) + 1).padStart(2, '0');
+    const day = String(Math.floor(Math.random() * 28) + 1).padStart(2, '0');
+    const hour = String(Math.floor(Math.random() * 24)).padStart(2, '0');
+    const min = String(Math.floor(Math.random() * 60)).padStart(2, '0');
+    return  day + '/' + month + ' ' + hour + ':' + min ;
 }
 
 const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
@@ -27,7 +28,7 @@ const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
                        <h3>finish: {createRandomTime()}</h3>
                     </div>
                 <div>
-                    <p>Task description with long long long te...</p>
+                    <p>Task description with long long text</p>
                 </div>
                 <div className={mycard.footer}>
                     <div className={mycard.buttons}>
