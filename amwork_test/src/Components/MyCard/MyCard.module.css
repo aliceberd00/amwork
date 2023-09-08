@@ -11,17 +11,13 @@
 }
 
 .task {
-  align-items: center;
   display: flex;
   margin: 0 auto;
   width: 95%;
-  color: #3D8FEC;
-  font-weight: 600;
-  font-size: 20px;
   max-width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 85px;
+  max-height: 72px;
 }
 .task h1 {
   color: #3D8FEC;

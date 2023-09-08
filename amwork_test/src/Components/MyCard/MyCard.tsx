@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import {IOneCardData} from '../../Types/dataTypes';
 import mycard from './MyCard.module.css';
 import Checkbox from '@mui/material/Checkbox';
+import {faker} from "@faker-js/faker";
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -27,7 +28,7 @@ const MyCard: React.FC<IOneCardData> = ({completed, id, title, userId}) => {
                        <h3>finish: {createRandomTime()}</h3>
                     </div>
                 <div className={mycard.description}>
-                    <p>Task description with long long long text</p>
+                    <p>{faker.random.word()} </p>
                 </div>
                 <div className={mycard.footer}>
                     <div className={mycard.buttons}>
