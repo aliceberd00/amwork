@@ -8,3 +8,5 @@ TypeScript, React, CSS, facker, Material UI
 
 Ссылка на проект:
 https://amwork.digitalberd.com/
+
+Alisa Berdysheva (alifox23969@gmail.com, alisa@digitalberd.com)
